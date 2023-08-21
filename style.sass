@@ -1,0 +1,239 @@
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+@keyframes names
+    0%
+        background: aqua
+        transform: translateY(110%)
+    
+    50% 
+        background: aqua
+        transform: translateY(-110%)
+    
+    100%
+        background: aqua
+        transform: translateY(110%)
+.circle
+    width: 300px
+    heihgt: 300px
+    border-radius: 50%
+    background: #000
+    border: 5px solid #fff200
+    box-shadow: 0px 0px 7px #fff200 , outset 0px 0px 7px #fff200 
+    position: absolute
+    left: 0px
+    top: 500px
+@keyframes nam 
+    0%
+        background-image: url('./svet2.jpg')
+    20%
+        background-image: url('./svet3.jpg')
+    40%
+        background-image: url('./svet4.jpg')
+    60%
+        background-image: url('./svet6.jpg')
+    80%
+        background-image: url('./svet3.jpg')
+    100%
+        background-image: url('./svet2.jpg')
+            
+#se
+    width: 100%
+    height: 100vh
+    background: linear-gradient(#161616 , #161618 , #000 , #000)
+    
+    #s
+        width: 100%
+        height: 120px
+        background-size: cover
+        animation: nam 5s infinite alternate
+    .back
+        width: 350px
+        height: 490px
+        overflow: hidden
+        border: 2px solid aqua
+        position: absolute
+        border-radius: 30px
+        box-shadow: 0px 0px 50px aqua , inset 0px 0px 12px aqua
+        left: 50%
+        top: 55%
+        transform: translateX(-50%) translateY(-50%)
+        &::before
+            width: 100%
+            height: 100%
+            position: absolute
+            z-index: -1
+            content: ''
+            background: none
+.back:hover::before
+    animation: names 6s infinite 
+        .form
+            width: 315px
+            height: 455px
+            border: 2px solid aqua
+            background: #000
+            position: absolute
+            border-radius: 20px
+            box-shadow: 0px 0px 12px aqua , inset 0px 0px 30px aqua
+            left: 50%
+            top: 50%
+            display: flex
+            flex-direction: column
+            padding: 10px 30px 0px 30px
+            transform: translateX(-50%)  translateY(-50%)
+            &__1
+                width: 100%
+                height: 100px
+                display: flex
+                align-items: center
+                justify-content: center
+                flex-direction: column
+                svg
+                    color: aqua
+                    filter: drop-shadow(0px 0px 7px aqua)
+                    width: 30px
+                h2
+                    font-family: Arial
+                    -webkit-text-stroke: 0.9px aqua
+                    text-shadow: 0px 0px 10px aqua
+            &__2
+                height: 170px
+                display: flex
+                justify-content: space-between
+                flex-direction: column
+                .is
+                    width: 100%
+                    overflow: hidden
+                    position: relative
+                    z-index: -1
+                    height: 45px
+                    &::before
+                        width: 100%
+                        height: 43px
+                        z-index: 1
+                        content: 'Full name'
+                        display: flex
+                        justify-content: center
+                        align-items: center
+                        flex-direction: column
+                        position: absolute
+                        left: 0
+                        font-family: Arial
+                        font-size: 17px
+                        color: aqua
+                        border-bottom: 2px solid aqua
+                        top: 0
+                        background: #000000    
+                    input
+                        height: 100%
+                        width: 100%
+                        border: none
+                        position: absolute
+                        top: 0
+                        text-align: center
+                        left: 0
+                        background: aqua
+                        &:focus
+                            outline: none
+                            box-shadow: inset 0px 0px 100px aqua
+                            color: #fff
+                        &::placeholder
+                            color: black
+                            text-align: center
+                            font-size: 17px
+                            font-family: Arial, Helvetica, sans-serif
+                .is1
+                    width: 100%
+                    position: relative
+                    overflow: hidden
+                    height: 45px
+                    &::before
+                        width: 100%
+                        height: 42px
+                        z-index: 1
+                        content: 'Email'
+                        display: flex
+                        justify-content: center
+                        align-items: center
+                        flex-direction: column
+                        position: absolute
+                        left: 0
+                        font-family: Arial
+                        font-size: 17px
+                        color: aqua
+                        border-bottom: 2px solid aqua
+                        top: 0
+                        background:#000000  
+                    input
+                        height: 100%
+                        width: 100%
+                        border: none
+                        -webkit-appearance: none
+                        top: 0
+                        left: 0
+                        appearance: none
+                        position: absolute
+                        text-align: center
+                        background: aqua
+                        &:focus
+                            outline: none
+                            box-shadow: inset 0px 0px 100px aqua
+                            color: #fff
+                        &::placeholder
+                            color: black
+                            text-align: center
+                            font-size: 17px
+                            font-family: Arial, Helvetica, sans-serif
+                .is2
+                    width: 100%
+                    position: relative
+                    overflow: hidden
+                    height: 45px
+                    &::before
+                        width: 100%
+                        height: 43px
+                        z-index: 1
+                        content: 'Password'
+                        display: flex
+                        justify-content: center
+                        align-items: center
+                        flex-direction: column
+                        position: absolute
+                        left: 0
+                        font-family: Arial
+                        font-size: 17px
+                        color: aqua
+                        border-bottom: 2px solid aqua
+                        top: 0
+                        background: #000000  
+                    input
+                        height: 100%
+                        text-align: center
+                        width: 100%
+                        top: 0
+                        left: 0
+                        border: none
+                        -webkit-appearance: none
+                        padding-left: 20px
+                        appearance: none
+                        position: absolute
+                        background: aqua
+                        &:focus
+                            outline: none
+                            box-shadow: inset 0px 0px 100px aqua
+                            color: #fff
+                        &::placeholder
+                            text-align: center
+                            color: black
+                            font-size: 17px
+                            font-family: Arial, Helvetica, sans-serif
+                
+            &__3
+                h3
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+                    -webkit-text-stroke: 2px solid 
+
+
+            
